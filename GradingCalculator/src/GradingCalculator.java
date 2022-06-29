@@ -12,13 +12,13 @@ public class GradingCalculator {
 		
 		//fill letter array based on grade array
 		for(int i=0;i<grades.length;i++) {
-			if(grades[i]>a)
+			if(grades[i]>=a)
 				letter[i]='A';
-			else if(grades[i]>b)
+			else if(grades[i]>=b)
 				letter[i]='B';
-			else if(grades[i]>c)
+			else if(grades[i]>=c)
 				letter[i]='C';
-			else if(grades[i]>d)
+			else if(grades[i]>=d)
 				letter[i]='D';
 			else
 				letter[i]='F';
