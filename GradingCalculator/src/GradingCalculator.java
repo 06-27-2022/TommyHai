@@ -26,7 +26,7 @@ public class GradingCalculator {
 		
 		System.out.println("Grades\n"+topic[0]+":"+letter[0]);
 		for(int i=1;i<grades.length;i++)
-			System.out.println(topic[0]+":"+letter[i]);
+			System.out.println(topic[i]+": "+letter[i]);
 	}
 
 }
