@@ -33,3 +33,12 @@ select "InvoiceId" , count("InvoiceLineId") from "InvoiceLine" group by "Invoice
 select "InvoiceId" , count("InvoiceLineId") from "InvoiceLine" group by "InvoiceId" order by "InvoiceId";
 
 
+--9) Looking at the InvoiceLine table, provide a query that COUNTs the number of line items for Invoice ID 37.
+select * from "InvoiceLine";
+
+select count("InvoiceId") from "Invoice" where "InvoiceId" = 7;
+
+--answer
+select count("InvoiceId") from "Invoice" where "InvoiceId" = (select "InvoiceId" from "InvoiceLine" where "InvoiceLineId"=37);
+
+
